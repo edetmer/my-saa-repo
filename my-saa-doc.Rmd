@@ -1,7 +1,20 @@
 ---
-title: "Untitled"
+title: "Sarah's Iris Plot"
 output: html_document
 ---
+
+
+Make a plot of the iris data.
+
+```{r}
+
+library(ggplot2)
+
+ggplot(iris, aes(Sepal.Length,Sepal.Width, color=Species))+geom_point()+facet_wrap(~Species)
+theme_light()
+
+```
+
 
 
 ```{r}
@@ -13,3 +26,4 @@ ggplot(iris,
            color=Species)) +
   geom_contour()
 ```
+
